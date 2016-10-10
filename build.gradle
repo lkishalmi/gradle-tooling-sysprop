@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+mainClassName = 'gradle.tooling.sysprop.Main'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.gradle:gradle-tooling-api:3.1'
+    runtime 'org.slf4j:slf4j-simple:1.7.10'
+    testCompile 'junit:junit:4.12'
+}
